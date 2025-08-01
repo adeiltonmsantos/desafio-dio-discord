@@ -16,6 +16,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: stretch;
+    background-color: #ffffff;
 }
 
 /* Header */
@@ -94,4 +95,8 @@ main h1{
     align-items: center;
     padding: 3rem 3rem;
     gap: 1.5rem;
+}
+
+main:nth-child(odd){
+    background-color: #f6f6f6;
 }
