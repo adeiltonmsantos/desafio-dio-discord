@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Luckiest+Guy&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Basic&family=DM+Serif+Text:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    box-sizing: border-box
+}
+
 html{
     font-size: 62.5%;
-    box-sizing: border-box
 }
 
 body{
@@ -10,21 +15,59 @@ body{
     padding: 0;
     display: flex;
     flex-direction: column;
+    justify-content: stretch;
 }
 
 /* Header */
 
 header{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
     background-image: url('img/Header_Background.png');
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: 74% -5%;
-    height: 100vh;
+    background-position: 72% 50%;
+    height: 50vh;
     padding: 5rem 2.5rem;
+    font-family: 'Open Sans';
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+h1, p{
+    color: #ffffff;
 }
 
 h1{
-    font-family: Luckiest Guy;
-    color: #ffffff;
+    font-family: "Luckiest Guy";
     font-size: 3.2rem;
     font-weight: normal;
+    margin: 0;
+}
+
+.btn-area{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.btn-white, .btn-black{
+    border: none;
+    padding: 1.6rem 0.8rem;
+    height: 5.4rem;
+    width: 38.1rem;
+    border-radius: 2.7rem;
+    font-size: 1.6rem;
+    font-family: 'Open Sans';
+}
+
+.btn-white{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.btn-black{
+    background-color: #000000;
+    color: #ffffff;
 }
