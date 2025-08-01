@@ -48,12 +48,13 @@ header{
 .btn-area{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 1.5rem;
 }
 
 .btn-white, .btn-black{
     border: none;
-    padding: 1.6rem 0.8rem;
+    padding: 1.6rem;
     height: 5.4rem;
     width: 100%;
     border-radius: 2.7rem;
@@ -76,7 +77,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     font-family: 'Open Sans';
     font-size: 1.6rem;
     font-weight: 400;
@@ -92,7 +93,6 @@ main h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     align-items: center;
 }
 
@@ -124,11 +124,11 @@ footer{
         background-size: cover;
         /* align-items: stretch; */
     }
-
+    
     header .h1-lucky{
         font-size: 4rem;
     }
-
+    
 }
 
 @media screen and (min-width: 650px){
@@ -161,7 +161,37 @@ footer{
 }
 
 @media screen and (min-width: 800px){
+    #section-1 h1, #section-2 h1, #section-3 h1{
+        font-size: 4rem;
+    }
+    
+    #section-1 .resume-container, #section-2 .resume-container, #section-3 .resume-container{
+        width: 34.8rem;
+    }
+
+    #section-1 img, #section-2 img, #section-3 img{
+        width: 60.7rem;
+    }
+    
+    #section-4 p{
+        max-width: 80.2rem;
+    }
+
+    #section-4 .h1-lucky{
+        max-width: 50rem;
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    #section-4 img{
+        width: 78.4rem;
+    }
+
     .btn-area{
         margin: 0 10%;
+    }
+
+    footer img{
+        width: 23rem;
     }
 }
